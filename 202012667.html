@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebProgramming</title>
+    <link rel="stylesheet" href="./mystyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <input name="tab" type="radio" id="aboutme" checked="checked" />
+    <input name="tab" type="radio" id="aboutpartner" />
+    <input name="tab" type="radio" id="introducetrail" />
+    <input name="tab" type="radio" id="info" />
+
+    <header id="main-header">
+      <div id="header-container">
+        <div class="left-container">
+          <h1>WEBPROGRAMMING</h1>
+          <p>
+            "2024년 봄<br />
+            서울의 길을 걷다"
+          </p>
+          <div class="button-container">
+            <a id="gototrails" href="https://gil.seoul.go.kr/walk/index.jsp"
+              >서울시 두드림길 둘러보기</a
+            >
+            <a
+              id="gotohanyangtrail"
+              href="https://gil.seoul.go.kr/walk/course/etc_gil.jsp?upper_code_idx=4000&c_idx=276&pagenum=#detail"
+              >소개된 한양도성길 보러가기</a
+            >
+          </div>
+        </div>
+        <div class="right-container">
+          <img src="header-background.png" alt="header-background" />
+          <nav id="main-nav">
+            <ul>
+              <li>
+                <label for="aboutme">About Me</label>
+                <div class="line" />
+              </li>
+              <li>
+                <label for="aboutpartner">About Partner</label>
+                <div class="line" />
+              </li>
+              <li>
+                <label for="introducetrail">Introduce Trail</label>
+                <div class="line" />
+              </li>
+              <li>
+                <label for="info">Info</label>
+                <div class="line" />
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <article id="aboutme">
+      <div class="left-container">
+        <p class="title">나를 소개합니다!</p>
+        <p class="discription">
+          저는 건국대학교에 재학중이며 컴퓨터공학을 전공하고 있는<br />20학번
+          <span>송채영</span> 입니다
+        </p>
+        <div class="content-container">
+          <div class="content">
+            <div class="content-title">
+              겉바속촉의 매력을 지녔어요.
+              <div class="circle"></div>
+            </div>
+            <p class="content-discription">
+              다들 저보고 쿨하다고 시크하다고 하지만 속은 아주 촉촉한
+              겉바속촉이랍니다. 겉으론 무뚝뚝해보여도 마음만은 여려요🥹
+            </p>
+          </div>
+          <div class="content">
+            <div class="content-title">
+              영화, 드라마를 좋아해요.
+              <div class="circle"></div>
+            </div>
+            <p class="content-discription">
+              영화, 드라마는 그때그때 놓치지않고 섭렵하는 편이에요. 침대에 누워
+              하루종일 드라마만 보는시간을 참 좋아합니다.
+            </p>
+          </div>
+          <div class="content">
+            <div class="content-title">
+              미니멀리즘을 추구하지만 맥시멀해요.
+              <div class="circle"></div>
+            </div>
+            <p class="content-discription">
+              항상 미니멀하게 살고자 다짐하는데 잘안돼요.. 버리고 싶은데 버리기
+              아깝고 자꾸만 사게됩니다.. 언젠가는 비워볼거에요...
+            </p>
+          </div>
+          <div class="content">
+            <div class="content-title">
+              사부작거리는 걸 좋아해요.
+              <div class="circle"></div>
+            </div>
+            <p class="content-discription">
+              뜨개질도 해봤고 비즈로 팔찌도 만들어봤어요! 올해는 요리에 공을
+              들이고 있답니다!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <img src="aboutme.png" alt="about-me" />
+      </div>
+    </article>
+    <article id="aboutpartner">
+      <div class="title-container">
+        <p class="title">짝꿍을 소개합니다!</p>
+        <p class="discription">
+          제 짝꿍은 건국대학교에 재학중이며 저와 같은 컴퓨터공학을 전공하고
+          있는<br />19학번 <span>정경은</span> 입니다
+        </p>
+      </div>
+      <p class="title">짝꿍을 알아보는 20문답!</p>
+      <div class="content">
+        <section class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide20" class="carousel__prev"
+                  >Go to last slide</a
+                >
+                <a href="#carousel__slide2" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+              <div class="questions">
+                <p>MBTI</p>
+                <p>
+                  제 짝꿍의 MBIT ~에요 어쩐지 ~ 하더라구요제 짝꿍의 MBIT ~에요
+                  어쩐지 ~ 하더라구요제 짝꿍의 MBIT ~에요 어쩐지 ~ 하더라구요제
+                  짝꿍의 MBIT ~에요 어쩐지 ~ 하더라구요제 짝꿍의 MBIT ~에요
+                  어쩐지 ~ 하더라구요제 짝꿍의 MBIT ~에요 어쩐지 ~ 하더라구요제
+                  짝꿍의 MBIT ~에요 어쩐지 ~ 하더라구요제 짝꿍의 MBIT ~에요
+                  어쩐지 ~ 하더라구요제 짝꿍의 MBIT ~에요 어쩐지 ~ 하더라구요제
+                  짝꿍의 MBIT ~에요 어쩐지 ~ 하더라구요제 짝꿍의 MBIT ~에요
+                  어쩐지 ~
+                </p>
+              </div>
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide1" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide3" class="carousel__next"
+                >Go to next slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 2</p>
+              </div>
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide2" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide4" class="carousel__next"
+                >Go to next slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 3</p>
+              </div>
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide3" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide5" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide5" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide4" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide6" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide6" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide5" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide7" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide7" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide6" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide8" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide8" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide7" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide9" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide9" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide8" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide10" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide10" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide9" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide11" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide11" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide10" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide12" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide12" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide11" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide13" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide13" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide12" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide14" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide14" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide13" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide15" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide15" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide14" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide16" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide16" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide15" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide17" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide17" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide16" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide18" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide18" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide17" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide19" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 4</p>
+              </div>
+            </li>
+            <li id="carousel__slide19" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide18" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide20" class="carousel__next"
+                >Go to next slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 19</p>
+              </div>
+            </li>
+            <li id="carousel__slide20" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide19" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide1" class="carousel__next"
+                >Go to first slide</a
+              >
+              <div class="questions">
+                <p>MBTI</p>
+                <p>This is slide 20</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+        <div class="img-container">
+          <img src="interview.png" alt="interview1" />
+          <img src="interview2.png" alt="interview2" />
+        </div>
+      </div>
+    </article>
+    <article id="introducetrail">
+      <p class="title">‘한양도성길 낙산구간’을 소개합니다!</p>
+      <p class="discription">
+        한양도성길의 낙산 구간은 혜화문에서 시작해 낙산을 지나 흥인지문까지
+        이어지는 구간이에요. <br />낙산(126m)은 서울에서 낮고 특이한 모양의 산
+        중 하나로, 낙타 등처럼 생겨 낙타산 또는 타락산이라고도 불려왔어요.<br />
+        이 구간은 경사가 완만해서 산책하기 좋아요.<br />다만, 이 길을 걸을 때는
+        주의가 필요해요! 주변에는 장수마을과 이화마을이 있어요.<br />
+        그래서 이곳을 지날 때는 주민들에게 피해를 주지 않도록 조용히 걸으며
+        배려하는 것이 중요해요. 안전한 산책을 즐기시길 바랄게요!
+      </p>
+      <div class="img-container">
+        <img src="trail1.png" alt="trail1" />
+        <img src="trail2.png" alt="trail2" />
+        <img src="trail3.png" alt="trail3" />
+      </div>
+      <p class="title">왜 한양도성길을 골랐을까요?</p>
+      <p class="discription">
+        저희가 한양도성길의 낙산구간을 선택한 이유는 짝꿍은 명일에 살고, 저는
+        건대입구역에 살고 있어 <br />다른 길 보다 교통이 편리하고 접근하기
+        쉬웠기 때문이에요. <br />이 길은 주변에 대학로가 위치해 있어 볼거리와
+        맛있는 음식이 많아서 날 좋은 날 산책 뿐아니라 다른것도 즐길 수 있을 것
+        같아 선택한 것도 있어요. <br />특히 이곳은 야경이 아름다워서 낭만을
+        즐기기에도 딱일 것 같았어요. <br />정말 결정적으로는 둘 다 체력이 좋지
+        않다는 걸 고려해서 걷기에 딱 한 시간이면 적당하다고 생각했답니다~<br />저와
+        짝꿍은 정말 정말 만족스럽게 즐기고 왔어요!! 다들 한번 꼭 가보시길
+        바래요!!
+      </p>
+      <div class="reason-container">
+        <div class="reason-content">
+          <img src="reason1.png" alt="reason1" />
+          <span>활기 넘치는 대학로 💛</span>
+        </div>
+        <div class="reason-content">
+          <img src="reason2.png" alt="reason1" />
+          <span>다양한 연극 💛</span>
+        </div>
+        <div class="reason-content">
+          <img src="reason3.png" alt="reason1" />
+          <span>낭만적인 야경 💛</span>
+        </div>
+      </div>
+    </article>
+    <article id="info">
+      <p class="title">‘한양도성길 낙산구간’을 소개합니다!</p>
+      <p class="discription">‘한양도성길 낙산구간’을 소개합니다!</p>
+    </article>
+  </body>
+</html>
